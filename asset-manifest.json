@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nova/static/css/main.aac1424e.css",
+    "main.js": "/nova/static/js/main.611daddb.js",
+    "static/js/787.bad531f5.chunk.js": "/nova/static/js/787.bad531f5.chunk.js",
+    "static/media/GTWalsheimPro-Bold.woff": "/nova/static/media/GTWalsheimPro-Bold.6ead5fc9d23b21a10d0a.woff",
+    "static/media/GTWalsheimPro-Regular.woff": "/nova/static/media/GTWalsheimPro-Regular.1668df1c1c97770e0490.woff",
+    "static/media/person.png": "/nova/static/media/person.b09004180d3f6fe179c4.png",
+    "static/media/attach.svg": "/nova/static/media/attach.cd5c8602b07a32318a441611ac0ff30f.svg",
+    "static/media/smile.svg": "/nova/static/media/smile.a700072dbe2119af111e6d030e618ba5.svg",
+    "index.html": "/nova/index.html",
+    "static/media/send.svg": "/nova/static/media/send.f3a91a8282470a0f49d42a12d91eceae.svg",
+    "static/media/arrowleft.svg": "/nova/static/media/arrowleft.d527a591cfc10b4d3cae707c6d4eefdf.svg",
+    "static/media/close.svg": "/nova/static/media/close.44e1cf25e95d5cf4cf72626c30650404.svg",
+    "static/media/minimize.svg": "/nova/static/media/minimize.a6b79e939b852478707be45dfb125113.svg",
+    "main.aac1424e.css.map": "/nova/static/css/main.aac1424e.css.map",
+    "main.611daddb.js.map": "/nova/static/js/main.611daddb.js.map",
+    "787.bad531f5.chunk.js.map": "/nova/static/js/787.bad531f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aac1424e.css",
+    "static/js/main.611daddb.js"
+  ]
+}
