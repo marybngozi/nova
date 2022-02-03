@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "GT Walsheim Pro";
+  font-weight: 500;
+  src: url(../fonts/GTWalsheimPro-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "GT Walsheim Pro";
+  font-weight: normal;
+  src: url(../fonts/GTWalsheimPro-Regular.woff) format("woff");
+}
+body {
+  margin: 0;
+  font-family: "GT Walsheim Pro", "Droid Sans", sans-serif;
+}
+.App {
+  background: #ffffff;
+}

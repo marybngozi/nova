@@ -1,0 +1,47 @@
+header {
+  background: #78a431;
+  height: 8.938rem;
+  width: 100%;
+  margin: 0;
+}
+header .top {
+  display: flex;
+  max-width: 21.75rem;
+  justify-content: space-between;
+  padding-top: 2.125rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: auto;
+}
+header h4 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  margin: 0;
+}
+header p {
+  color: #cbdfab;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 1px;
+}
+header button {
+  background: #cbdfab;
+  border: none;
+  border-radius: 0.188rem;
+}
+header button.btn-arrow {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+header button.btn-right {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+header button.btn-right:first-child {
+  margin-right: 0.375rem;
+}
+header button.btn-right .icn {
+  vertical-align: middle;
+}
