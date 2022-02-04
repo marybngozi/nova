@@ -36,6 +36,40 @@ export const ChatBody = () => {
     },
   ]);
 
+  const randomResponses = [
+    {
+      type: "sys",
+      name: "Penny",
+      message: "Hi",
+    },
+    {
+      type: "sys",
+      name: "Penny",
+      message: "That's very awesome, we can do that",
+    },
+    {
+      type: "sys",
+      name: "Penny",
+      message: "We can also make you smile",
+    },
+    {
+      type: "sys",
+      name: "Penny",
+      message: "That's one of the things that makes life awesome",
+    },
+    {
+      type: "sys",
+      name: "Penny",
+      message: "You are the best",
+    },
+  ];
+
+  const getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  };
+
   const chatEnd = React.useRef(null);
 
   const submitForm = (e) => {
@@ -49,13 +83,7 @@ export const ChatBody = () => {
 
     setChats(newChats);
 
-    const sysMsg = {
-      type: "sys",
-      name: "Penny",
-      message: "That's very awesome, we can do that",
-    };
-
-    newChats.push(sysMsg);
+    newChats.push(randomResponses[getRandomInt(0, randomResponses.length)]);
 
     setTimeout(() => {
       setChats(newChats);

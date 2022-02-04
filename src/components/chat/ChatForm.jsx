@@ -23,10 +23,10 @@ export const ChatForm = ({ handleSubmit }) => {
   return (
     <form action="" method="post" onSubmit={localHandle}>
       <div>
-        <button disabled className="btn-icon" type="button">
+        <button className="btn-icon" type="button">
           <Attach />
         </button>
-        <button disabled className="btn-icon" type="button">
+        <button className="btn-icon" type="button">
           <Smile />
         </button>
       </div>
