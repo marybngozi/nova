@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Animate, AnimateGroup } from "react-simple-animate";
 import moment from "moment";
 import "../styles/ChatBody.css";
 import { SenderFrame } from "./chat/SenderFrame";
@@ -82,6 +83,8 @@ export const ChatBody = () => {
     let newChats = [...chats, userMsg];
 
     setChats(newChats);
+    // scroll to the end for the new messages
+    chatEnd.current.scrollIntoView({ behavior: "smooth", block: "end" });
 
     newChats.push(randomResponses[getRandomInt(0, randomResponses.length)]);
 
@@ -90,7 +93,7 @@ export const ChatBody = () => {
 
       // scroll to the end for the new messages
       chatEnd.current.scrollIntoView({ behavior: "smooth", block: "end" });
-    }, 300);
+    }, 400);
   };
 
   return (
@@ -100,15 +103,23 @@ export const ChatBody = () => {
       </div>
 
       <div className="chat-area">
-        {chats.map((chat, i) => {
-          return chat.type === "sys" ? (
-            <SenderFrame key={i} name={chat.name} message={chat.message} />
-          ) : chat.type === "user" ? (
-            <UserFrame key={i} data={chat} />
-          ) : (
-            <SuggestFrame key={i} suggests={chat.actions} />
-          );
-        })}
+        <AnimateGroup play={true}>
+          {chats.map((chat, i) => {
+            return chat.type === "sys" ? (
+              <Animate key={i} play={true} sequenceIndex={i}>
+                <SenderFrame name={chat.name} message={chat.message} />
+              </Animate>
+            ) : chat.type === "user" ? (
+              <Animate key={i} play={true} sequenceIndex={i}>
+                <UserFrame data={chat} />
+              </Animate>
+            ) : (
+              <Animate key={i} play={true} sequenceIndex={i}>
+                <SuggestFrame suggests={chat.actions} />
+              </Animate>
+            );
+          })}
+        </AnimateGroup>
         <div ref={chatEnd}></div>
       </div>
 

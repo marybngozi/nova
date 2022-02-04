@@ -11,6 +11,7 @@
 body {
   margin: 0;
   font-family: "GT Walsheim Pro", "Droid Sans", sans-serif;
+  height: 100vh;
 }
 .App {
   background: #ffffff;
